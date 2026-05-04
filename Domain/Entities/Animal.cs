@@ -6,16 +6,18 @@ namespace Domain.Entities
 {
     public class Animal
     {
-        int edad { get; set; }
-        int peso { get; set; }
-        string salud { get; set; }
-        Especie especie { get; set; }
-        Dieta dieta {get;set; }
-        List<Horario> horariosAlimentacion{get;set; }
+        public string idAnimal { get; set; }
+        public string nombre { get; set; }
+        public int edad { get; set; }
+        public int peso { get; set; }
+        public string salud { get; set; }
+        public string especie { get; set; }
+        public string dieta {get;set; }
+        public List<Horario> horariosAlimentacion{get;set; }
         public Animal()
         {
         }
-        public Animal(int edad, int peso, string salud, Especie especie, Dieta dieta, List<Horario> horariosAlimentacion)
+        public Animal(int edad, int peso, string salud, string especie, string dieta, List<Horario> horariosAlimentacion)
         {
             this.edad = edad;
             this.peso = peso;

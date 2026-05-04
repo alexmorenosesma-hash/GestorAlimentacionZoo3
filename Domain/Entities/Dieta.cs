@@ -6,8 +6,9 @@ namespace Domain.Entities
 {
     public class Dieta
     {
-        string nombre { get; set; }
-        List<Alimento> alimentos { get; set; }
+        public string idDieta { get; set; }
+        public string nombre { get; set; }
+        public List<Alimento> alimentos { get; set; }
         public Dieta()
         {
         }

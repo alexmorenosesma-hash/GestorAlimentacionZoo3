@@ -44,5 +44,15 @@ namespace Infraestructure.Repositories
 
         public Task EliminarEspecie(string id)
             => _db.DeleteAsync("especies", id);
+
+        public async Task<List<string>> ObtenerNombreEspecies()
+        {
+            var especies = await ObtenerEspecies();
+            return especies
+            .Where(e => !string.IsNullOrWhiteSpace(e.nombre))
+            .Select(e => e.nombre)
+            .ToList();
+        }
     }
+
 }

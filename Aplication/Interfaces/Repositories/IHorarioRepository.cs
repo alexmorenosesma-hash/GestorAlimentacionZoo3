@@ -11,5 +11,6 @@ namespace Aplication.Interfaces.Repositories
         Task<List<Horario>> ObtenerHorarios();
         Task EditarHorario(string id, Horario horario);
         Task EliminarHorario(string id);
+
     }
 }

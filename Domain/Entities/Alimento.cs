@@ -6,9 +6,10 @@ namespace Domain.Entities
 {
     public class Alimento
     {
-        string nombre { get; set; }
-        double cantidad { get; set; }
-        string unidad { get; set; }
+        public string idAlimento { get; set; }
+        public string nombre { get; set; }
+        public double cantidad { get; set; }
+        public string unidad { get; set; }
         public Alimento()
         {
         }

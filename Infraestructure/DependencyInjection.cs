@@ -19,6 +19,9 @@ namespace Infraestructure
             services.AddTransient<IRealtimeService, RealtimeService>();
             services.AddTransient<IEspecieRepository, EspecieRepository>();
             services.AddTransient<IHorarioRepository, HorarioRepository>();
+            services.AddTransient<IAlimentoRepository, AlimentoRepository>();
+            services.AddTransient<IDietaRepository, DietaRepository>();
+            services.AddTransient<IAnimalRepository, AnimalRepository>();
         }
     }
 }

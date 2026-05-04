@@ -11,5 +11,7 @@ namespace Aplication.Interfaces.Repositories
         Task<List<Especie>> ObtenerEspecies();
         Task EditarEspecie(string id, Especie especie);
         Task EliminarEspecie(string id);
+        public Task<List<string>> ObtenerNombreEspecies();
+
     }
 }
