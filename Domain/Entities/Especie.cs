@@ -10,7 +10,9 @@ namespace Domain.Entities
         public string nombre { get; set; }
         public string nombreCientifico { get; set; }
         public string tipoAlimentacion { get; set; }
-        
+        public string tipoAnimal { get; set; }  
+        public string habitat { get; set; }
+
         public Especie()
         {
         }
@@ -20,11 +22,13 @@ namespace Domain.Entities
             this.nombre = nombre;
             this.tipoAlimentacion = tipoAlimentacion;
         }
-        public Especie(string nombre, string nombreCientifico, string tipoAlimentacion)
+        public Especie(string nombre, string nombreCientifico, string tipoAlimentacion, string tipoAnimal, string habitat)
         {
             this.nombre = nombre;
             this.nombreCientifico = nombreCientifico;
             this.tipoAlimentacion = tipoAlimentacion;
+            this.tipoAnimal = tipoAnimal;
+            this.habitat = habitat;
         }
 
     }

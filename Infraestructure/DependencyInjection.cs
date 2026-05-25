@@ -22,6 +22,8 @@ namespace Infraestructure
             services.AddTransient<IAlimentoRepository, AlimentoRepository>();
             services.AddTransient<IDietaRepository, DietaRepository>();
             services.AddTransient<IAnimalRepository, AnimalRepository>();
+            services.AddTransient<IEnfermedadRepository, EnfermedadRepository>();
+            services.AddTransient<ICuidadorRepository, CuidadorRepository>();
         }
     }
 }

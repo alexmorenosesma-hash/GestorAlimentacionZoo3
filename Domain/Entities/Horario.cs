@@ -12,7 +12,7 @@ namespace Domain.Entities
         {
         }
         public Horario(string hora) {
-                        this.hora = hora;
+            this.hora = hora;
         }
     }
 }
